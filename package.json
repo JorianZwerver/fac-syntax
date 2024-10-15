@@ -1,0 +1,30 @@
+{
+  "name": "fac-syntax",
+  "displayName": "FAC Syntax",
+  "description": "FAC Syntax Highlighting",
+  "repository": {},
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fac",
+      "aliases": ["FPGA Assembly", "fac"],
+      "extensions": [".fac"],
+      "configuration": "./language-configuration.json",
+      "icon": { 
+        "light": "./icons/fac.svg",
+        "dark": "./icons/fac.svg"
+      }
+    }],
+    "grammars": [{
+      "language": "fac",
+      "scopeName": "source.fac",
+      "path": "./syntaxes/fac.tmLanguage.json"
+    }]
+  }
+}
